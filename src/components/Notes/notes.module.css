@@ -1,0 +1,249 @@
+#addnote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+#addnote button {
+    margin-top: 5vh;
+}
+
+#addnote button a {
+    text-decoration: none;
+    color: white;
+}
+
+#addnote form {
+    padding: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(97, 97, 97);
+    border: 0.2vw solid rgb(56, 55, 55);
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw 1vw rgb(224, 0, 0);
+}
+
+#addnote form input {
+    padding: 0.5vw 1vw;
+    margin: 0.5vw 0;
+    font-size: 1.3vw;
+    outline: none;
+    border: 0.2vw solid grey;
+    border-radius: 1vw;
+}
+
+#addnote form button {
+    width: 100%;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+}
+
+#notes {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#notes h1 {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+    color: rgb(53, 0, 26);
+    text-shadow: 0.2vw 0.2vw 0.2vw rgb(224, 0, 0);
+}
+
+#notes #item {
+    display: grid;
+    min-width: 100%;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: auto auto auto;
+    /* background-color: rgb(145, 16, 16); */
+}
+
+.noNotes {
+    text-align: center;
+    font-size: 1.5vw;
+    color: rgb(53, 0, 26);
+    text-shadow: 0.2vw 0.2vw 0.2vw rgb(224, 0, 0);
+    /* background-color: blueviolet; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.form input, .form textarea {
+    min-width: 100% !important;
+    padding: 0.5vw 1vw;
+    margin: 0.5vw 0;
+    font-size: 1.3vw;
+    outline: none;
+    border: 0.2vw solid grey;
+    border-radius: 1vw;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    #addnote h1 {
+        font-size: 9vw;
+    }
+
+    #addnote form {
+        padding: 4vw;
+        border: 0.4vw solid rgb(56, 55, 55);
+        box-shadow: 0.4vw 0.4vw 2vw rgb(224, 0, 0);
+        border-radius: 2vw;
+    }
+    
+    #addnote form input {
+        padding: 1vw 2vw;
+        margin: 1.5vw 0;
+        font-size: 4vw;
+        outline: none;
+        border: 0.2vw solid grey;
+        border-radius: 2vw;
+    }
+    
+    #addnote form button {
+        margin: 1vw;
+        font-size: 4vw;
+    }
+    
+    #notes h1 {
+        font-size: 9vw;
+        margin-bottom: 4vh;
+    }
+
+    #notes #item {
+        grid-template-columns: 100vw;
+    }
+    
+    .noNotes {
+        font-size: 4vw;
+    }
+
+    .form {
+        border-radius: 2vw;
+    }
+    
+    .form input, .form textarea {
+        padding: 1vw 2vw;
+        margin: 1vw 0;
+        font-size: 4vw;
+        border: 0.4vw solid grey;
+        border-radius: 2vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    #addnote h1 {
+        font-size: 8vw;
+    }
+
+    #addnote form {
+        padding: 3vw;
+        border: 0.3vw solid rgb(56, 55, 55);
+        box-shadow: 0.3vw 0.3vw 1.8vw rgb(224, 0, 0);
+        border-radius: 2vw;
+    }
+    
+    #addnote form input {
+        padding: 1vw 2vw;
+        margin: 1.5vw 0;
+        font-size: 4vw;
+        border-radius: 2vw;
+    }
+    
+    #addnote form button {
+        margin: 1vw;
+        font-size: 4vw;
+    }
+    
+    #notes h1 {
+        font-size: 8vw;
+        margin-bottom: 4vh;
+    }
+
+    #notes #item {
+        grid-template-columns: 50vw 50vw;
+    }
+    
+    .noNotes {
+        font-size: 4vw;
+    }
+
+    .form {
+        border-radius: 2vw;
+    }
+    
+    .form input, .form textarea {
+        padding: 0.8vw 1.6vw;
+        margin: 1vw 0;
+        font-size: 3vw;
+        border: 0.3vw solid grey;
+        border-radius: 2vw;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #addnote h1 {
+        font-size: 5vw;
+    }
+
+    #addnote form {
+        padding: 3vw;
+        border: 0.3vw solid rgb(56, 55, 55);
+        box-shadow: 0.3vw 0.3vw 1.5vw rgb(224, 0, 0);
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form input {
+        margin: 1vw 0;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form button {
+        margin: 1vw;
+        font-size: 2vw;
+    }
+    
+    #notes h1 {
+        font-size: 5vw;
+        margin-bottom: 4vh;
+    }
+
+    #notes #item {
+        display: grid;
+        grid-template-columns: 33.2vw 33.2vw 33.2vw;
+    }
+    
+    .noNotes {
+        font-size: 3vw;
+    }
+
+    .form {
+        border-radius: 1.5vw;
+    }
+    
+    .form input, .form textarea {
+        padding: 0.6vw 1.2vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+    }
+
+}

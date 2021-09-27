@@ -1,0 +1,166 @@
+#addnote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    /* min-height: 50vh; */
+    /* background-color: lightblue; */
+}
+
+#addnote::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("./images/addnote-bg.jpg") center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#addnote h1 {
+    margin-top: 3vh;
+    font-size: 4vw;
+    margin-bottom: 2vh;
+    color: rgb(53, 0, 26);
+    text-shadow: 0.2vw 0.2vw 0.2vw rgb(224, 0, 0);
+}
+
+#addnote form {
+    padding: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(97, 97, 97);
+    border: 0.2vw solid rgb(56, 55, 55);
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw 1vw rgb(224, 0, 0);
+}
+
+#addnote form input {
+    padding: 0.5vw 1vw;
+    margin: 0.5vw 0;
+    font-size: 1.5vw;
+    outline: none;
+    border: 0.2vw solid grey;
+    border-radius: 1vw;
+}
+
+#addnote form textarea {
+    min-width: 100%;
+    padding: 0.5vw 1vw;
+    margin: 0.5vw 0;
+    font-size: 1.5vw;
+    outline: none;
+    border: 0.2vw solid grey;
+    border-radius: 1vw;
+}
+
+#addnote form button {
+    width: 100%;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    
+    #addnote h1 {
+        font-size: 10vw;
+        text-shadow: 0.4vw 0.4vw 0.4vw rgb(224, 0, 0);
+    }
+    
+    #addnote form {
+        border: 0.4vw solid rgb(56, 55, 55);
+        border-radius: 2vw;
+        box-shadow: 0.4vw 0.4vw 2vw rgb(224, 0, 0);
+    }
+    
+    #addnote form input {
+        padding: 1vw 2vw;
+        margin: 1vw 0;
+        font-size: 4vw;
+        border: 0.4vw solid grey;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form textarea {
+        padding: 1vw 2vw;
+        margin: 1vw 0;
+        font-size: 4vw;
+        border: 0.4vw solid grey;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form button {
+        margin: 1vw;
+        font-size: 4vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    #addnote h1 {
+        font-size: 8vw;
+        text-shadow: 0.3vw 0.3vw 0.3vw rgb(224, 0, 0);
+    }
+    
+    #addnote form {
+        border: 0.3vw solid rgb(56, 55, 55);
+        border-radius: 2vw;
+        box-shadow: 0.3vw 0.3vw 1.5vw rgb(224, 0, 0);
+    }
+    
+    #addnote form input {
+        padding: 0.8vw 1.5vw;
+        margin: 1vw 0;
+        font-size: 3vw;
+        border: 0.3vw solid grey;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form textarea {
+        padding: 0.8vw 1.5vw;
+        margin: 1vw 0;
+        font-size: 3vw;
+        border: 0.3vw solid grey;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form button {
+        margin: 1vw;
+        font-size: 3vw;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    #addnote h1 {
+        font-size: 5vw;
+    }
+    
+    #addnote form {
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form input {
+        padding: 0.8vw 1.5vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form textarea {
+        padding: 0.8vw 1.5vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+    }
+    
+    #addnote form button {
+        margin: 0.8vw;
+        font-size: 2vw;
+    }
+
+}

@@ -1,24 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState } from "react";
+import { Switch, Route } from "react-router-dom";
+import NotesState from "./context/notes/NotesState";
+import UsersState from "./context/users/UsersState";
+
+import Navbar from "./components/UI/Navbar";
+import Home from "./components/Notes/Home";
+import About from "./components/Notes/About";
+import Login from "./components/Users/Login";
+import Notes from "./components/Notes/Notes";
+import Register from "./components/Users/Register";
+import Alert from "./components/UI/Alert";
+import Addnote from "./components/Notes/Addnote";
+import Profile from "./components/Users/Profile";
+
+import "./App.css";
 
 function App() {
+
+  const [alert, setAlert] = useState(null);
+
+  const showAlert = (message, status)=> {
+    setAlert({
+      msg: message,
+      status: status
+    });
+    setTimeout(()=> {
+      setAlert(null);
+    },1500)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar showAlert={showAlert} />
+      <Alert alert={alert} />
+      <UsersState>
+        <NotesState>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+
+            <Route exact path="/about">
+              <About />
+            </Route>
+
+            <Route exact path="/notes">
+              <Notes showAlert={showAlert} />
+            </Route>
+
+            <Route exact path="/addNote">
+              <Addnote showAlert={showAlert} />
+            </Route>
+
+            <Route exact path="/register">
+              <Register showAlert={showAlert} />
+            </Route>
+
+            <Route exact path="/login">
+              <Login showAlert={showAlert} />
+            </Route>
+
+            <Route exact path="/profile">
+              <Profile />
+            </Route>
+            
+          </Switch>
+        </NotesState>
+      </UsersState>
+    </Fragment>
   );
 }
 

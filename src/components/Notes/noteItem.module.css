@@ -1,0 +1,129 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 1vw;
+    padding: 1vw;
+    background-color: white;
+    border: 0.2vw solid black;
+    border-radius: 1vw;
+    min-width: 28vw;
+    box-shadow: 0.2vw 0.2vw 1vw rgb(224, 0, 0);
+}
+
+.card .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .item h2 {
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.card .item i {
+    margin-left: 0.5vw;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    .card {
+        justify-content: space-between;
+        padding: 2vw;
+        margin: 2vw;
+        border: 0.4vw solid black;
+    }
+    
+    .card .item h2 {
+        font-size: 6vw;
+    }
+    
+    .card p {
+        font-size: 4vw;
+    }
+
+    .card .item {
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow ; */
+    }
+    
+    .card .item i {
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .card {
+        justify-content: flex-start;
+        padding: 2vw;
+        margin: 2vw;
+        border: 0.4vw solid black;
+    }
+    
+    .card .item h2 {
+        font-size: 5vw;
+    }
+    
+    .card p {
+        font-size: 3vw;
+    }
+
+    .card .item {
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow ; */
+    }
+    
+    .card .item i {
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .card {
+        justify-content: flex-start;
+        padding: 1.5vw;
+        border: 0.2vw solid black;
+    }
+    
+    .card .item h2 {
+        font-size: 3vw;
+    }
+    
+    .card p {
+        font-size: 1.5vw;
+    }
+
+    .card .item {
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow ; */
+    }
+    
+    .card .item i {
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+
+}
