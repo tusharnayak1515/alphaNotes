@@ -43,14 +43,7 @@ const NotesState = (props)=> {
 
         const json = await response.json();
         return json;
-        // if(json.success) {
-        //     localStorage.removeItem("error");
-        //     localStorage.setItem("token",json.authToken);
-        //     history.push("/notes");
-        // }
-        // else {
-        //     localStorage.setItem("error",json.error);
-        // }
+        
     }
 
     const getUserDetails = async ()=> {
