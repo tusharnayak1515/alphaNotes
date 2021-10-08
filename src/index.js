@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
+import LoadingSpinner from './components/UI/LoadingSpinner';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter><Suspense><App /></Suspense></BrowserRouter>
+    <BrowserRouter><Suspense fallback={<div className="center"><LoadingSpinner /></div>}><App /></Suspense></BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

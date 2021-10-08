@@ -1,0 +1,8 @@
+.loading {
+    text-align: center;
+}
+
+.loading img {
+    height: 25vw;
+    width: 35vw;
+}
