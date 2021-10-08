@@ -5,7 +5,7 @@ import UserContext from "./userContext";
 
 const NotesState = (props)=> {
     let history = useHistory();
-    const server = "http://localhost:5000";
+    const server = process.env.REACT_APP_SERVER_URL || "http://localhost:5000";
 
     const [userDetails, setUserDetails] = useState({name: "", email: ""});
 

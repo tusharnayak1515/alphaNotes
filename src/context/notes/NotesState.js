@@ -2,7 +2,7 @@ import { useState } from "react";
 import NotesContext from "./notesContext";
 
 const NotesState = (props) => {
-    const server = "http://localhost:5000";
+    const server = process.env.REACT_APP_SERVER_URL || "http://localhost:5000";
     const initialNotes = [];
     const [notes, setNotes] = useState(initialNotes);
 
@@ -57,7 +57,6 @@ const NotesState = (props) => {
         });
 
         const json = await response.json();
-        // console.log(json);
         if (json.success) {
             localStorage.removeItem("error");
             let newNotes = await JSON.parse(JSON.stringify(notes));
@@ -98,18 +97,6 @@ const NotesState = (props) => {
         }
 
     }
-
-    // const getFullNote = async (id) => {
-    //     const response = await fetch(`${server}/api/notes/${id}`, {
-    //         method: "GET",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             "auth-token": localStorage.getItem("token")
-    //         }
-    //     });
-    //     const json = await response.json();
-    //     return json;
-    // }
 
     return (
         <NotesContext.Provider value={{ notes, getNotes, addNote, editNote, deleteNote }}>
