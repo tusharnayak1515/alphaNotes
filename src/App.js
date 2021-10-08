@@ -13,6 +13,8 @@ import Home from "./components/Notes/Home";
 // import Addnote from "./components/Notes/Addnote";
 // import Profile from "./components/Users/Profile";
 
+import "./App.css";
+
 const About = React.lazy(()=> import('./components/Notes/About'));
 const Login = React.lazy(()=> import('./components/Users/Login'));
 const Notes = React.lazy(()=> import('./components/Notes/Notes'));
@@ -21,7 +23,6 @@ const Alert = React.lazy(()=> import('./components/UI/Alert'));
 const Addnote = React.lazy(()=> import('./components/Notes/Addnote'));
 const Profile = React.lazy(()=> import('./components/Users/Profile'));
 
-import "./App.css";
 
 function App() {
 
