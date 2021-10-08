@@ -61,7 +61,7 @@
     min-width: 100%;
     grid-template-columns: 33vw 33vw 33vw;
     grid-template-rows: auto auto auto;
-    /* background-color: rgb(145, 16, 16); */
+    /* background-color: rgb(224, 224, 224); */
 }
 
 .noNotes {

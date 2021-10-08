@@ -20,7 +20,8 @@
 }
 
 #navbar #logo h2:hover {
-    text-shadow: 0.05vw 0.1vw 0.5vw rgb(33, 33, 255);
+    color: rgb(230, 152, 36);
+    text-shadow: 0.2vw 0.2vw 1vw rgb(255, 255, 255);
 }
 
 #navbar #logo #toggle {
@@ -123,7 +124,7 @@
     }
 
     #navbar #logo h2:hover {
-        text-shadow: 0.2vw 0.2vw 0.4vw yellow;
+        text-shadow: 0.4vw 0.4vw 2vw rgb(255, 255, 255);
     }
 
     #navbar #logo #toggle {
@@ -184,7 +185,7 @@
     }
 
     #navbar #logo h2:hover {
-        text-shadow: 0.2vw 0.2vw 0.4vw yellow;
+        text-shadow: 0.3vw 0.3vw 1.5vw rgb(255, 255, 255);
     }
 
     #navbar #logo #toggle {

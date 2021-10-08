@@ -8,11 +8,9 @@ import styles from "./login.module.css";
 
 const Login = ({ showAlert }) => {
 
-  // localStorage.setItem("error"," ");
-
   let history = useHistory();
   if (localStorage.getItem("token")) {
-    history.push("/");
+    history.push("/notes");
   }
   const context = useContext(UserContext);
   const { loginUser } = context;

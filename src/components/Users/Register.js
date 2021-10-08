@@ -1,4 +1,5 @@
 import React,{useState,useContext} from "react";
+import { useHistory } from "react-router";
 import UserContext from '../../context/users/userContext';
 
 import Button from "../UI/Button";
@@ -6,6 +7,12 @@ import Button from "../UI/Button";
 import styles from "./register.module.css";
 
 const Register = ({showAlert}) => {
+
+  const history = useHistory();
+
+  if(localStorage.getItem("token")) {
+    history.push("/notes");
+  }
 
   const context = useContext(UserContext);
   const {registerUser} = context;

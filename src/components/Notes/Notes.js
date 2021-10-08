@@ -7,7 +7,7 @@ import NoteItem from './NoteItem';
 
 import styles from './notes.module.css';
 
-const Notes = () => {
+const Notes = ({showAlert}) => {
     const context = useContext(notesContext);
     const { notes, getNotes, editNote } = context;
     let history = useHistory();
@@ -35,6 +35,13 @@ const Notes = () => {
     const onEditClick = () => {
         editNote(enote);
         refClose.current.click();
+        const error = localStorage.getItem("error");
+        if(error === null) {
+            showAlert("Successfully edited note","Success");
+        }
+        else {
+            showAlert("Editing Note Failed","Failure");
+        }
     }
 
     const onShowClick = () => {

@@ -49,7 +49,7 @@ const Navbar = ({showAlert}) => {
                     <span></span>
                 </div>
             </div>
-
+            
             <ul>
                 <li><Link to='/' className={`${location.pathname === "/" ? styles.active : ""}`}>Home</Link></li>
                 <li><Link to='/about' className={`${location.pathname === "/about" ? styles.active : ""}`}>About</Link></li>

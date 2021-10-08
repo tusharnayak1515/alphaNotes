@@ -33,6 +33,10 @@ span {
     color: blue;
 }
 
+span:hover {
+    color:red;
+}
+
 .card .item i {
     margin-left: 0.5vw;
 }
