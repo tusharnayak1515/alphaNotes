@@ -1,0 +1,25 @@
+[debug] [2021-10-08T12:17:11.237Z] ----------------------------------------------------------------------
+[debug] [2021-10-08T12:17:11.239Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tusha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2021-10-08T12:17:11.240Z] CLI Version:   9.20.0
+[debug] [2021-10-08T12:17:11.240Z] Platform:      win32
+[debug] [2021-10-08T12:17:11.240Z] Node Version:  v14.17.1
+[debug] [2021-10-08T12:17:11.242Z] Time:          Fri Oct 08 2021 17:47:11 GMT+0530 (India Standard Time)
+[debug] [2021-10-08T12:17:11.243Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-08T12:17:11.295Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-08T12:17:11.295Z] > authorizing via signed-in user (tusharnayak1515@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tusha\OneDrive\Desktop\REACT\alpha-notes
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+

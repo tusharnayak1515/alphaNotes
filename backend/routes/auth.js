@@ -46,7 +46,6 @@ router.post('/register', [
     }
 
     catch(err) {
-        console.error(err.message);
         res.send({error: "Internal Server Error", status: 500});
     }
 
